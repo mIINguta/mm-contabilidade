@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 export default function CardContato(props:any){
-    let HasInsta:string;
     let HasTel: string;
 
     HasTel = props.telefone;
