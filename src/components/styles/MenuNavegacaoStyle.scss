@@ -1,0 +1,51 @@
+.second-list{ 
+    list-style: none; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    min-height: 10vh;
+    font-family: "Zilla Slab";
+
+   
+
+    li{
+
+        a,i{
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1em;
+        }
+        i{
+            font-size: 1.3em;
+        }
+        a:hover, i:hover{
+            font-weight: bold;
+        }
+    }
+
+}
+
+
+
+@media (max-width:1100px){
+    .second-list{
+        display: none;
+        flex-direction: column;
+        height: auto;
+
+        
+        
+        li{
+            width: 100%;
+            padding: 5px;
+            text-align: center;
+
+            a{
+                :checked{
+                    color:#029673;
+                }
+            }
+        }
+       }
+}

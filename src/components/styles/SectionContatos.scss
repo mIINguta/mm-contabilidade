@@ -1,0 +1,42 @@
+.sec-contatos{
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    color:#0c0434;
+    height: 100vh;
+
+
+    .div-horarios{
+       
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+        h2{
+            font-weight: 100;
+
+        }
+    }
+
+    .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+}
+
+@media (max-width:900px){
+    .sec-contatos{
+        flex-direction: column;
+        height: auto;
+        
+        .cards{
+            flex-direction: column;
+        }
+    }
+}

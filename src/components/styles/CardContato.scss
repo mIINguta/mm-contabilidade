@@ -1,0 +1,110 @@
+
+.card{
+    background-color: #0c0434;
+    width: 20vw;
+    height: 80vh;
+    border-radius: 100px 0px;
+    padding: 20px;
+
+
+    .nome{
+        border-radius: 10px 10px 100px 10px;
+        border-bottom: 3px solid #029673;
+        
+
+        :nth-of-type(2){
+            color:grey;
+        }
+        h4{
+        color: #fff;
+        font-weight: 100;
+    }
+    }
+
+
+    img{
+        border-radius: 30%; 
+    }
+
+    .div-info{
+        display: flex;
+        width: 100%;
+
+        .but-des{
+            display: flex;
+            gap: 20px;
+            height: auto;
+            width: 100%;
+            
+            
+
+
+            .buttons{
+
+                ul{
+                    list-style-type:none;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    height: 30vh;
+                    
+                }
+                li{
+
+                    a{
+                        font-size: 1.5em;
+                        color: #fff;
+                    }
+                }
+            }
+
+            .info{
+
+                div{
+                    height: 10vh;
+                    color: #fff;
+                    text-align: left;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    font-weight: 100;
+                    
+
+                    h3{
+                        font-size: 1em;
+                        font-weight: 100;
+                    }
+                    span{
+                        font-size: 0.8em;
+                        font-style: italic;
+                        
+                    }
+                }
+
+            }
+        }
+
+
+    }
+
+
+}
+
+@media(max-width:900px){
+    .card{
+        width: 90%;
+        height:80%;
+    
+
+        .div-info{
+            font-size: 1.3em;
+
+            justify-content: center;
+            height: 50%;
+
+            .but-des{
+                justify-content: center;
+            }
+        }
+    }
+}

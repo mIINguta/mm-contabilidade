@@ -1,0 +1,53 @@
+.sec-sobrenos{
+    display: flex;
+    align-items: center;
+    padding: 40px 80px;
+    font-size: 20px;
+    min-height: 100vh;
+    height: auto;
+h2{
+    border-bottom: 1px solid black;
+    color:#029673; 
+    width: 35vw;
+}
+
+div{
+    width: 100%;
+    padding-left: 15px;
+    color:#000;
+    } 
+}
+.btn-quemsomos{
+    padding: 10px;
+    background-color: #0c0434;
+    color: #ffff;
+    text-decoration: none; 
+    
+    :hover{
+    color: #029673;
+    transform: scale(1.1);
+}
+}
+
+@media (max-width:900px){
+    .sec-sobrenos{
+        
+            flex-direction: column;
+            height: auto;
+            padding: 15px;
+            text-align: justify;
+
+            div{
+                padding: 0;
+            }
+            
+            a{
+                margin: 20px 0px;
+            }
+            
+            
+            h2{
+                width: 100%;
+            }
+    }
+}
