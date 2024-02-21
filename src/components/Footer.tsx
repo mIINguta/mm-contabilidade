@@ -1,3 +1,5 @@
+import LogoFooter from "../assets/images/logo-footer.png"
+
 
 export default function Footer(){
     return (
@@ -5,7 +7,7 @@ export default function Footer(){
         <footer>
         <div className="div-footer">
         <figure className="div-logo-footer">
-            <img className="img-sobrenos" src="../src/assets/images/logo-footer.png" alt="Imagem contábil ilustra"/>
+            <img className="img-sobrenos" src={LogoFooter} alt="Imagem contábil ilustra"/>
         </figure>
         <ul className="footer-list">
             <dl>HOME</dl>

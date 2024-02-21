@@ -1,12 +1,14 @@
 import { useState } from "react";
 
+import LogoMenu from '../assets/images/logo-menu-azul.png'
+
 
 export default function MenuNavegacao(){
     const [headerClass, setHeaderClass] = useState(false);
     return(
         <>
         <figure className={`${headerClass ? 'desativo': 'ativo'}`} >
-            <img src='./src/assets/images/logo-menu-azul.png' alt="Logo MM Contabilidade" />
+            <img src={LogoMenu} alt="Logo MM Contabilidade" />
         </figure>
          <ul className={`second-list ${`${headerClass ? 'ativo': 'desativo'}`}`}>
                 <li><a href="#sec-sobrenos">QUEM SOMOS</a></li>
