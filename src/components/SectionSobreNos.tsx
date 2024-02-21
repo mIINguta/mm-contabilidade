@@ -1,7 +1,4 @@
-import React from "react";
 import ImgSobre from '../assets/images/logo1.png';
-
-
 export default function SectionSobreNos(){
     return(
         <>

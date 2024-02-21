@@ -1,5 +1,3 @@
-import React from "react"
-
 import ImgMarcelo from "../assets/images/marcelo-contato.png";
 import ImgElizeu from "../assets/images/elizeu-contato.png";
 import CardContato from "./CardContato";

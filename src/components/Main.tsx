@@ -1,4 +1,3 @@
-import React from "react";
 import SectionApresentacao from "./SectionApresentacao";
 import SectionSobreNos from "./SectionSobreNos";
 import SectionServicos from "./SectionServicos";
