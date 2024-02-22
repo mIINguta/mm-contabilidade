@@ -16,30 +16,31 @@
         font-weight: 100;
     }
 
-    .carousel{
-        width: 62vw;
-        overflow: hidden;
-        cursor: grab;
-    }
-    ul{
-        display: flex;
-        gap: 10px;
+ }
 
-        li{
-            list-style-type: none;
-            
-            img{
-                width: 100%;
-            }
-            figcaption{
-                color: #000;
-                background-color: #ffff;
-                font-size: 1.3em;
-                margin-top: -7px;
-            }
+ .carousel{
+    width: 62vw;
+    overflow: hidden;
+    cursor: grab;
+}
+ul{
+    display: flex;
+    gap: 10px;
+
+    li{
+        list-style-type: none;
+        
+        img{
+            width: 100%;
+        }
+        figcaption{
+            color: #000;
+            background-color: #ffff;
+            font-size: 1.3em;
+            margin-top: -7px;
         }
     }
- }
+}
 
  @media(max-width:800px){
     .sec-servicos{
@@ -51,9 +52,6 @@
         }
     .carousel{
         width: 67vw;
-
-        
-
     }
  }
 }
