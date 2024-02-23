@@ -1,32 +1,39 @@
 
 .card{
     background-color: #0c0434;
-    width: 20vw;
-    height: 80vh;
+    min-width: 20vw;
+    min-height: 80vh;
+    height: auto;
     border-radius: 100px 0px;
-    padding: 20px;
-
-  
-    
-
+    padding: 20px;  
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
 
     .nome{
-        border-radius: 10px 10px 100px 10px;
+        border-radius: 10px 10px 60px 10px;
         border-bottom: 3px solid #029673;
+        width: 80%;
+        padding-bottom: 5px;
         
 
         :nth-of-type(2){
-            color:grey;
+            color:#808080;
         }
         h4{
         color: #fff;
         font-weight: 100;
     }
     }
+    figure{
+        width: 20vw;
+    
     img{
+   
         border-radius: 30%; 
 
     }
+}
 
     .div-info{
         display: flex;
@@ -48,7 +55,8 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
-                    height: 30vh;
+                    align-items: center;
+                    min-height: 30vh;
                     
                 }
                 li{
@@ -79,16 +87,13 @@
                 }
 
                 div{
-                    height: 10vh;
+                    min-height: 10vh;
                     color: #fff;
                     text-align: left;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     font-weight: 100;
-                    
-                    
-                    
 
                     h3{
                         font-size: 1em;
@@ -113,14 +118,16 @@
 @media(max-width:900px){
     .card{
         width: 90%;
-        height:80%;
+        min-height:80%;
+        height: auto;
     
 
         .div-info{
             font-size: 1.3em;
 
             justify-content: center;
-            height: 50%;
+            height: auto;
+            min-height: 50%;
 
             .but-des{
                 justify-content: center;

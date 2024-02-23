@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import {useState, useRef, useEffect, forwardRef} from "react";
+import {useState, useRef, useEffect} from "react";
 
 import CardContato from "../components/CardContato";
 import ImgGustavo from"../assets/images/gustavo-quemsomos-card.png"
@@ -8,7 +8,7 @@ import ImgRosana from"../assets/images/rosana-quemsomos-card.png"
 import ImgAlmir from"../assets/images/almir-quemsomos-card.png"
 import ImgMarcelo from"../assets/images/marcelo-quemsomos-card.png"
 
-export default function QuemSomos(){
+export default function QuemSomos({quemSomosRef}:any){
     let carousel:any = useRef();
     let [width, setWidth]:any = useState(0);
 
@@ -20,8 +20,8 @@ export default function QuemSomos(){
 
     return(
         <>
-            <section className="sec-quem-somos">
-                <div  className="desc">
+            <section ref={quemSomosRef} className="sec-quem-somos">
+                <div className="desc">
                     <h2>NOSSA EQUIPE</h2>
                     <p>A equipe de contabilidade é composta por profissionais qualificados e experientes que trabalham em conjunto para oferecer serviços contábeis abrangentes e de qualidade para a sua empresa.</p>   
 
@@ -57,7 +57,7 @@ export default function QuemSomos(){
                             <CardContato
                                 img ={ImgAlmir}
                                 nome= "Almir Ferreira"
-                                funcao = "Departamento Pessoal"
+                                funcao = "Dep. Pessoal"
                                 quemsomos = {true}
                                 telefone = "5521964018625"
                                 email= "almirfcarvalho8@gmail.com"
@@ -102,7 +102,6 @@ export default function QuemSomos(){
                                 >
                             </CardContato>
                         </li>
-
                         </motion.ul>
                             <p className="aviso"> Arraste para ver</p>
                         </motion.div>
