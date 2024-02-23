@@ -1,19 +1,13 @@
 import ImgSobre from '../assets/images/logo1.png';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import QuemSomos from '../pages/QuemSomos';
 import { useRef } from 'react';
 
+import QuemSomos from '../pages/QuemSomos';
 export default function SectionSobreNos(){
 
-    const quemSomosRef:any = useRef();
-
-    const handleClick = () =>{
-            quemSomosRef.current?.scrollIntoView({})
-        }
+    let QuemSomosRef:any = useRef();
 
     return(
-
-      
         <> 
         <BrowserRouter>
         <section id="sec-sobrenos" className="sec-sobrenos"> 
@@ -31,22 +25,22 @@ export default function SectionSobreNos(){
                 </div>
                
                     <Link to="/quem-somos">
-                        <button className="btn-quemsomos" onClick={handleClick}
-                        
+                        <button className="btn-quemsomos"  onClick={()=> {
+                            QuemSomosRef.current?.scrollIntoView()
+                        }}                      
                         title="Saiba mais">
                             <i className="fa-solid fa-plus"></i>
                         </button> 
                     </Link>
                     
             </section>
+            <section ref={QuemSomosRef}>
                 <Routes>
                     <Route path="/quem-somos"  element={<QuemSomos/> }></Route>
-                </Routes> 
+                </Routes>
+            </section> 
             </BrowserRouter>  
 
-            
-           
-      
         </>
     )
 }

@@ -3,17 +3,17 @@
     display:flex;
     justify-content: flex-end;
     align-items: center;
-    min-height: 85vh;
+    min-height: 95vh;
     height: auto;
-    text-align: center;
-    background-image: url(/src/assets/images/img-apresentacao1.jpg);
-    background-position: fixed;
+    background-image: url(/src/assets/images/img-apresentacao.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+   
 
       div{
+      
        font-weight: 400;
-       backdrop-filter: blur(5px);
        width: 100%;
        height: 100%;
        display: flex;

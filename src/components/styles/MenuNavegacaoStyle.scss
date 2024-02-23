@@ -1,14 +1,20 @@
 .second-list{ 
     list-style: none; 
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
     width: 60%;
     min-height: 10vh;
     font-family: "Zilla Slab";
 
-   
-
+    ul{
+        width: 10%;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+ 
     li{
 
         a,i{
@@ -32,14 +38,17 @@
     .second-list{
         display: none;
         flex-direction: column;
-        height: auto;
+        height: auto;   
 
-        
-        
+        ul{
+            display: flex;
+            list-style-type: none;
+            gap: 10px;
+            
+        }
+
         li{
-            width: 100%;
             padding: 5px;
-            text-align: center;
 
             a{
                 :checked{
