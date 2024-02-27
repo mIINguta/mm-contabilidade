@@ -1,0 +1,24 @@
+.section-imposto-renda{
+    background-color: #0c0434;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    height: auto;
+    border-top: 1px solid #fff;
+
+    ol{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    li{
+        width: 50%;
+        font-size: 1.1em;
+    }
+    
+    span{
+        font-weight: bold;
+    }
+}
