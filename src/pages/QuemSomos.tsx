@@ -7,6 +7,7 @@ import ImgElizeu from"../assets/images/elizeu-quemsomos-card.png"
 import ImgRosana from"../assets/images/rosana-quemsomos-card.png"
 import ImgAlmir from"../assets/images/almir-quemsomos-card.png"
 import ImgMarcelo from"../assets/images/marcelo-quemsomos-card.png"
+import ImgEquipe from "../assets/images/nossaequipe-quemsomos.jpeg"
 
 export default function QuemSomos({quemSomosRef}:any){
     let carousel:any = useRef();
@@ -29,7 +30,7 @@ export default function QuemSomos({quemSomosRef}:any){
                     </div>
 
                     <figure>
-                        <img src="src\assets\images\nossaequipe-quemsomos.jpeg" alt="" />
+                        <img src={ImgEquipe} alt="Imagem da Equipe" />
                     </figure>
             </section>
             <section id= "equipe" className="equipe">
