@@ -16,9 +16,13 @@ export default function MenuNavegacao(){
                 <li><a href="#sec-contatos">CONTATO</a></li>
                 <li><a href="#sec-localizacao">LOCALIZAÇÃO</a></li>
                 <li><a href="https://cofre.sieg.com/arquivos" target="_blank">PORTAL DO CLIENTE</a></li> 
-                <li><a href="https://www.instagram.com/mmservadm/" target="_blank"><i className="fa-brands fa-instagram"></i></a></li> 
-                <li><a href="https://linktr.ee/mmservadm" target="_blank"><i className="fa-solid fa-link"></i></a></li> 
-        </ul>  
+                <ul>
+                    <li><a href="https://www.instagram.com/mmservadm/" target="_blank"><i className="fa-brands fa-instagram"></i></a></li> 
+                    <li><a href="https://linktr.ee/mmservadm" target="_blank"><i className="fa-solid fa-link"></i></a></li>
+                </ul>
+                </ul>
+                
+               
         <button onClick={() => setHeaderClass(!headerClass)} className={`${headerClass ? 'ativo': 'desativo'}`}><i className="fa-solid fa-x"></i></button> 
 
         <button onClick={() => setHeaderClass(!headerClass)} className={`${headerClass ? 'desativo': 'ativo'}`} ><i className="fa-solid fa-bars"></i></button>

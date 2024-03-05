@@ -17,12 +17,12 @@ export default function Footer(){
         </ul>   
         <ul className="footer-list">
             <dl>SERVIÇOS</dl>
-            <li><a id="le" href="#desc-servicos" >LEGALIZAÇÃO DE EMPRESAS</a></li>
-            <li><a id="dp" href="#desc-servicos" > DEPARTAMENTO PESSOAL</a></li> 
-            <li><a id="fisc" href="#desc-servicos" > FISCAL</a></li>
-            <li><a id="ctb" href="#desc-servicos" > CONTÁBIL</a></li>
-            <li><a id="sm" href="#desc-servicos" > SOLUÇÕES PARA MEI</a></li>
-            <li><a id="cd" href="#desc-servicos" > CERTIFICADO DIGITAL</a></li>
+            <li><a id="le" >LEGALIZAÇÃO DE EMPRESAS</a></li>
+            <li><a id="dp" > DEPARTAMENTO PESSOAL</a></li> 
+            <li><a id="fisc"> FISCAL</a></li>
+            <li><a id="ctb"> CONTÁBIL</a></li>
+            <li><a id="sm" > SOLUÇÕES PARA MEI</a></li>
+            <li><a id="cd"> CERTIFICADO DIGITAL</a></li>
         </ul>
         <ul className="footer-list">
             <dl>ESPAÇO DO CLIENTE</dl>

@@ -70,7 +70,7 @@ export default function SectionServicos(){
  </motion.ul>
  </motion.div>
     <span className="legenda-carousel">Arraste para ver os serviços</span>
-    <a href="">Saiba Mais</a>
+    {/* <a href="">Saiba Mais</a> */}
     </section>
     </>
     )
